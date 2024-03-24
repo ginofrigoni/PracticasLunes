@@ -11,7 +11,9 @@
         let user = document.getElementById(id);
         // TODO 1: usar querySelector en lugar de children
         let contador = user.children[0].children[0].children[1].children[1];
-        //alert(contador.innerHTML);
+
+        let contadordos = document.querySelector(`#${id} .user-item__info h2:nth-child(2)`);
+        alert(contadordos.innerHTML);
         contador.innerText = parseInt(contador.innerText) + 1;
         // TODO 2: quiero generar el comente usuario (li) de manera automatica con javascript
         // TIP document.createElement()
