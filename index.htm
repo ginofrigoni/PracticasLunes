@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
     <script>
       function handlerClick_Card(id) {
         // DOM Document Object Model del HTML
         let user = document.getElementById(id);
         // TODO 1: usar querySelector en lugar de children
         //let contador = user.children[0].children[0].children[1].children[1];
-        //let contador = user.querySelector("h2:nth-child(2)");
 
-        let contador = user.querySelectorAll("h2")[1];
+        let contador = user.querySelector(".user-item__info h3");
+        //console.log(contador);
 
-        alert(contador.innerHTML);
         contador.innerText = parseInt(contador.innerText) + 1;
-        // TODO 2: quiero generar el comente usuario (li) de manera automatica con javascript
+        // TODO 2: quiero generar el componente usuario (li) de manera automatica con javascript
         // TIP document.createElement()
       }
     </script>
@@ -27,7 +26,7 @@
     <header>
       <nav>
         <a href="#">Home</a>
-        <a href="#">Usuarios</a>
+        <a href="users.htm">Usuarios</a>
       </nav>
     </header>
     <main>
@@ -37,11 +36,11 @@
           <div class="card user-item__content">
             <a href="#">
               <div class="user-item__image avatar">
-                <img src="/img/Adele Vance.jpg" alt="Adele Vance" />
+                <img src="img/Adele Vance.jpg" alt="Adele Vance" />
               </div>
               <div class="user-item__info">
                 <h2>Adele Vance</h2>
-                <h2>0</h2>
+                <h3>0</h3>
               </div>
             </a>
           </div>
@@ -50,11 +49,11 @@
           <div class="card user-item__content">
             <a href="#">
               <div class="user-item__image avatar">
-                <img src="/img/Alex Wilber.jpg" alt="Alex Wilber" />
+                <img src="img/Alex Wilber.jpg" alt="Alex Wilber" />
               </div>
               <div class="user-item__info">
                 <h2>Alex Wilber</h2>
-                <h2>0</h2>
+                <h3>0</h3>
               </div>
             </a>
           </div>
@@ -63,11 +62,11 @@
           <div class="card user-item__content">
             <a href="#">
               <div class="user-item__image avatar">
-                <img src="/img/Diego Siciliani.jpg" alt="Diego Siciliani.jpg" />
+                <img src="img/Diego Siciliani.jpg" alt="Diego Siciliani.jpg" />
               </div>
               <div class="user-item__info">
                 <h2>Diego Siciliani</h2>
-                <h2>0</h2>
+                <h3>0</h3>
               </div>
             </a>
           </div>

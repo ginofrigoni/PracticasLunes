@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <title>Detalle usuario</title>
+    <script src="mocs/usersMoc.js"></script>
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <div id="123">
+      <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const idUser = urlParams.get("id");
+
+        createUserDetails(idUser);
+
+      </script>
+    </div>
+  </body>
+</html>
